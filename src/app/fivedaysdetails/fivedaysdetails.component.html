@@ -1,0 +1,35 @@
+<nav>
+  <ul id="mainNav" class="nav nav-fill">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/countryList" routerLinkActive="active"
+        >Country List</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<div class="card">
+  <div class="card-header text-center">Next Five Days Temparature of <b>{{ cityName }}</b> @<b>09:00:00</b></div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered"
+        *ngIf="fiveDaysList && fiveDaysList.length"
+      >
+        <thead>
+          <tr class="bg-primary">
+            <th>Date</th>
+            <th>Temparature</th>
+            <!-- <th>Sea Level</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let five of fiveDaysList">
+            <td>{{ five.dayTime }}</td>
+            <td>{{ five.temperature }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

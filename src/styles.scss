@@ -1,0 +1,38 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    font-size: 1rem;
+    background: #a9cef3;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  .main-container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+
+  #branding {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica";
+    font-weight: 100;
+    color: #e71212;
+  }
+
+  #mainNav li a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica";
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  #mainNav .nav-item .active,
+  #mainNav .nav-item .nav-link:hover {
+    background: #2ecc71;
+    color: #000;
+  }
+
+  

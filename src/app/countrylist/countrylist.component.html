@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header text-center">European Cities List</div>
+  <div class="card-body">
+    <div class="table-responsive" *ngIf="countries && countries.length">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="bg-primary">
+            <th>City Name</th>
+            <th>Temparature</th>
+            <th>Sunrise Time</th>
+            <th>Sunset Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let city of countries" (click)="showTemp(city.city)" role="button">
+            <td>{{ city.city }}</td>
+            <td>{{ city.temperature}}</td>
+            <td>{{ city.sunriseTime}}</td>
+            <td>{{ city.sunsetTime}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
